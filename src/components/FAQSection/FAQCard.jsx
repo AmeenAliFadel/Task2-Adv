@@ -13,7 +13,7 @@ function FAQCard({ question, answer }) {
     return (
         <>
             {!isOpen &&
-                <div className='faq-card'>
+                <div className='faq-card' data-aos="flip-left">
                     <div className='faq-question' onClick={toggleCard}>
                         <h3>{question}</h3>
                         {isOpen &&
@@ -35,7 +35,7 @@ function FAQCard({ question, answer }) {
                 </div>
             }
             {isOpen &&
-                <div className="faq-open">
+                <div className="faq-open" data-aos="flip-left">
                     <div className='faq-question' onClick={toggleCard}>
                         <div>
                             <h3>{question}</h3>

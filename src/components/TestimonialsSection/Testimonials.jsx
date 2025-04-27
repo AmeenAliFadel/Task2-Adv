@@ -42,7 +42,7 @@ export default function Testimonials() {
         desc="Our testimonials are heartfelt reflections of the nurturing environment we provide, where children flourish both academically and emotionally."
       />
       <div className="container">
-        <div className="testimonials ">
+        <div className="testimonials" >
           {!isMobile &&
             <button className="prev-btn" onClick={handlePrev} disabled={start === 0}>
               <img src={prevBtn} alt="Previous" />

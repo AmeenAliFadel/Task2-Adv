@@ -12,7 +12,7 @@ export default function Benefits() {
         desc="With a dedicated team of experienced educators, state-of-the-art facilities, and a comprehensive curriculum, we aim to lay a strong foundation for your child's future."
       />
       <div className="container">
-        <div className="benefits">
+        <div className="benefits" >
           {BenefitsCardData.map((benefit, index) => (
             <BenefitsCard
               key={index}

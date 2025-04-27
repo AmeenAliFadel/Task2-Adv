@@ -12,7 +12,7 @@ function FAQ() {
         desc="Find all the essential information you need in our FAQ section, designed to address the most frequently asked questions and help you make informed decisions for your child's education."
       />
       <div className="container">
-        <div className="faq">
+        <div className="faq" >
           <div className="faq-group">
             {FAQCardData[0].map((item, index) => (
               <FAQCard key={index} question={item.question} answer={item.answer} />

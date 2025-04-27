@@ -49,6 +49,7 @@ header {
   top: 0;
   left: 50%;
   transform: translate(-50%);
+  z-index: 9999999;
 }
 
 @media (max-width:1919px) {

@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import Benefits from "./components/BenefitsSection/Benefits"
 import FAQ from "./components/FAQSection/FAQ"
 import Footer from "./components/FooterSection/Footer"
@@ -7,8 +8,18 @@ import NavBar2 from "./components/NavBar2/NavBar2"
 import Navigate from "./components/NavigateSection/Navigate"
 import Testimonials from "./components/TestimonialsSection/Testimonials"
 import './index.css'
+import AOS from "aos";
+import "aos/dist/aos.css";
 function App() {
-
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      offset: 0,
+      distance: '50px',
+      once: false,
+      mirror: true
+    });
+  }, []);
   return (
     <>
       <header>

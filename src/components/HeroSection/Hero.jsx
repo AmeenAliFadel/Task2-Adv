@@ -5,12 +5,12 @@ export default function Hero({span, title, titleSpan, desc}) {
   return (
     <>
       <div className="container">
-        <div className="hero">
-          <div className="hero-img">
+        <div className="hero" data-aos="fade-up">
+          <div className="hero-img" >
             <img src={heroImg} alt="heroImg" />
             
           </div>
-          <div className="hero-desc">
+          <div className="hero-desc" >
             <div className='hero-top-desc'>
               <span>{span}</span>
               <h1>{title} <span>{titleSpan} </span></h1>

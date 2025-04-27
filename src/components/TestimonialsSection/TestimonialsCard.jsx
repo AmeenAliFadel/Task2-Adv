@@ -3,7 +3,7 @@ import stars from '../../assets/Testimonials/stars.png'
 export default function TestimonialsCard({ name, icon, desc }) {
     return (
         <>
-            <div className="testimonials-card">
+            <div className="testimonials-card" data-aos="flip-left">
                 <div className="testimonials-icon">
                     <img src={icon} alt="icon" />
                 </div>
