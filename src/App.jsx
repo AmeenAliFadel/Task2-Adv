@@ -1,4 +1,4 @@
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import Benefits from "./components/BenefitsSection/Benefits"
 import FAQ from "./components/FAQSection/FAQ"
 import Footer from "./components/FooterSection/Footer"
@@ -10,6 +10,8 @@ import Testimonials from "./components/TestimonialsSection/Testimonials"
 import './index.css'
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Loader from "./components/Loader/Loader"
+
 function App() {
   useEffect(() => {
     AOS.init({
@@ -20,6 +22,16 @@ function App() {
       mirror: true
     });
   }, []);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) return <Loader />;
+
+
   return (
     <>
       <header>
