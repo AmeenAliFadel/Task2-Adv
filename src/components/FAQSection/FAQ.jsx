@@ -13,12 +13,12 @@ function FAQ() {
       />
       <div className="container">
         <div className="faq" >
-          <div className="faq-group">
+          <div className="faq-group"  data-aos="flip-left">
             {FAQCardData[0].map((item, index) => (
               <FAQCard key={index} question={item.question} answer={item.answer} />
             ))}
           </div>
-          <div className="faq-group">
+          <div className="faq-group"  data-aos="flip-left">
             {FAQCardData[1].map((item, index) => (
               <FAQCard key={index + 4} question={item.question} answer={item.answer} />
             ))}

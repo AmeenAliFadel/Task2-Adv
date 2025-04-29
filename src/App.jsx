@@ -11,6 +11,7 @@ import './index.css'
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Loader from "./components/Loader/Loader"
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop"
 
 function App() {
   useEffect(() => {
@@ -48,6 +49,7 @@ function App() {
       <FAQ />
       <Navigate />
       <Footer />
+      <ScrollToTop />
     </>
   )
 }

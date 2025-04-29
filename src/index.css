@@ -51,6 +51,14 @@ header {
   transform: translate(-50%);
   z-index: 9999999;
 }
+::-webkit-scrollbar {
+  width: 12px; 
+  height: 15px; 
+}
+::-webkit-scrollbar-thumb {
+  background: var(--Orange65);
+  border-radius: 6px;
+}
 
 @media (max-width:1919px) {
   .container {

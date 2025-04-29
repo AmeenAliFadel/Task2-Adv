@@ -285,17 +285,14 @@
         }
     }
     .footer .bottom-footer .bottom-footer-top {
-        flex-wrap: wrap;
-        justify-content: center;
         padding: 16px 0;
-
         p {
             font-size: 14px;
         }
     }
     .footer .bottom-footer .bottom-footer-top .bottom-footer-top-icons {
         gap: 10px;
-        margin-top: 20px;
+        
         span {
             padding: 12px;
             width: 44px;
@@ -316,5 +313,12 @@
         flex-wrap: wrap;
         text-align: center;
         justify-content: center;
+    }
+    .footer .bottom-footer .bottom-footer-top {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer .bottom-footer .bottom-footer-top .bottom-footer-top-icons{
+        margin-top: 20px;
     }
 }
